@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Colony Complaint Portal (Static Demo)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Colony Complaint Board (Static Demo)</h2>
+
+    <div id="loginSection">
+      <input id="email" placeholder="Email (e.g., user1@colony.com)" />
+      <input id="password" placeholder="Password" type="password" />
+      <button onclick="login()">Login</button>
+    </div>
+
+    <div id="userSection" style="display:none;">
+      <h3>Welcome, <span id="userEmail"></span></h3>
+      <div id="userInfo"></div>
+
+      <h4>Submit a Complaint</h4>
+      <input id="newComplaint" placeholder="Type your complaint..." />
+      <button onclick="submitComplaint()">Submit</button>
+
+      <h4>Top Complaints</h4>
+      <div id="complaintList"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
